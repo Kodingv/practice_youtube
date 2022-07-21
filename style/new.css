@@ -1,0 +1,54 @@
+.new_button {
+  background-color: white;
+  height: 55px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  white-space: nowrap;
+  opacity: 0.97;
+}
+.new_button button {
+  margin-right: 15px; 
+  top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid lightgray;
+  border-radius: 18px;
+  padding: 7px 12px 8px 12px;
+  cursor: pointer;
+}
+.new_button .first_button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.new_button .a:hover{
+  background-color: lightgray;
+}
+.new_button .b:hover{
+  background-color: lightgray;
+}
+.new_button .c:hover{
+  background-color: lightgray;
+}
+.new_button .d:hover{
+  background-color: lightgray;
+}
+.new_button .f:hover{
+  background-color: lightgray;
+}
+.new_button .g:hover{
+  background-color: lightgray;
+}
+.new_button .e:hover{
+  background-color: lightgray;
+}
+.new_button .h:hover{
+  background-color: lightgray;
+}
