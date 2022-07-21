@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyTube</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/new.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left_section">
+        <svg class="hamburger" width: 20px height: 20px>
+          <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z">
+          </path>
+        </svg>
+        <div class="logo" title="YouTube 홈">
+          <div class="red_logo">
+            <svg class="red_logo_1" width: 20px height: 20px>
+              <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z" fill="#FF0000">
+              </path>
+              <path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="white">
+              </path>
+            </svg>
+          </div>
+          <div class="text_logo">
+            너튜브
+          </div>
+        </div>
+      </div>
+
+      <div class="middle_section">
+        <input class="search_box" type="text" placeholder="검색">
+        <button class="icon_search">
+          <img class="search_pic" src="icons/search_pic.svg">
+          <div class="tooltip">
+            검색
+          </div>
+        </button>
+        <button class="icon_mic">
+          <img class="mic_pic" src="icons/mic_pic.svg">
+          <div class="tooltip">
+            음성으로 검색
+          </div>
+        </button>
+      </div>
+
+      <div class="right_section">
+        <div class="upload">
+          <img class="icon_upload" src="icons/upload_pic.svg">
+          <div class="tooltip">
+            만들기
+          </div>
+        </div>
+        <div class="app">
+          <img class="icon_app" src="icons/apps_pic.svg">
+          <div class="tooltip">
+            Youtube 앱
+          </div>
+        </div>
+        <div class="notification">
+          <img class="icon_notification" src="icons/notification_pic.svg">
+          <div class="notification_num">
+            3
+          </div>
+          <div class="tooltip">
+            알림
+          </div>
+        </div>
+        <button class="right_button">
+          지섭
+        </button>
+      </div>
+    </header>
+
+    <div class="new">
+      <div class="new_button">
+        <button class="first_button">
+          전체
+        </button>
+        <button class="a">
+          실시간
+        </button>
+        <button class="b">
+          게임
+        </button>
+        <button class="c">
+          음악
+        </button>
+        <button class="d">
+          축구
+        </button>
+        <button class="e">
+          요리
+        </button>
+        <button class="f">
+          랩
+        </button>
+        <button class="g">
+          만화 영화
+        </button>
+        <button class="h">
+          최근에 업로드된 동영상
+        </button>
+      </div>
+    </div>
+
+    <nav class="sidebar">
+      <div class="sidebar_box">
+        <img src="icons/home.svg">
+        <div>홈</div>
+      </div>
+      <div class="sidebar_box">
+        <img src="icons/explore.svg">
+        <div>탐색</div>
+      </div>
+      <div class="sidebar_box">
+        <img src="icons/short.png">
+        <div>Shorts</div>
+      </div>
+      <div class="sidebar_box">
+        <img class="shorts" src="icons/subscriptions.svg">
+        <div>구독</div>
+      </div>
+      <div class="sidebar_box">
+        <img src="icons/library.svg">
+        <div>보관함</div>
+      </div>
+    </nav>
+    
+    <main>
+      <section class="all_grid">
+        <div class="video_preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=jh_71Ig00js&t=45s">
+              <img class="thumbnail" src="thumbnails/playlist_1.jpg">
+              <div class="running_time">
+                2:08:31
+              </div>
+            </a>    
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=jh_71Ig00js&t=45s">
+                <img class="profile_pic"src="profiles/profile_1.jpg">
+              </a>  
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=jh_71Ig00js&t=45s">
+                  [Playlist] 우리 같이 바닷가로 떠나볼까? | 바다와 어울리는 청량한 노래 모음 | 여행갈 때 듣기 좋은 노래
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=jh_71Ig00js&t=45s">
+                  조거북
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=jh_71Ig00js&t=45s">
+                  조회수 19만회 &#183; 10개월 전
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=g2sSCktflX8&t=3669s">
+              <img class="thumbnail" src="thumbnails/playlist_2.jpg">
+            </a>
+            <div class="running_time">
+              3:33:44
+            </div>  
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=g2sSCktflX8&t=3669s">
+                <img class="profile_pic" src="profiles/profile_2.jpg">
+              </a>  
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=g2sSCktflX8&t=3669s">
+                  데일리로 틀어놓기 좋은 감성힙합 & 알앤비 노래 모음 | PLAYLIST
+                </a>  
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=g2sSCktflX8&t=3669s">
+                  찐막 JJINMAK
+                </a>  
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=g2sSCktflX8&t=3669s">
+                  조회수 249만회 &#183; 4개월 전
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+              <img class="thumbnail" src="thumbnails/thumbnail_3.webp">
+            </a>
+            <div class="running_time">
+              9:13
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                <img class="profile_pic"src="profiles/profile_3.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                  Crazy Tik Toks Taken Moments Before DISASTER
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                  SSSniperWolf
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                  12M views &#183; 1 year ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+              <img class="thumbnail" src="thumbnails/thumbnail_4.webp">
+            </a>
+            <div class="running_time">
+              22:09
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                <img class="profile_pic"src="profiles/profile_4.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                  The Simplest Math Problem No One Can Solve &#8722; Collatz Conjecture
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                  Veritasium
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                  18M views &#183; 4 months ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+              <img class="thumbnail" src="thumbnails/thumbnail_5.webp">
+            </a>
+            <div class="running_time">
+              11:17
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                <img class="profile_pic"src="profiles/profile_5.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                  Kadane's Algorithm to Maximum Sum Subarray Problem
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                  CS Dojo
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                  519K views &#183; 5 years ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+              <img class="thumbnail" src="thumbnails/thumbnail_6.webp">
+            </a>
+            <div class="running_time">
+              19:59
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                <img class="profile_pic"src="profiles/profile_6.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                  Anything You Can Fit In The Circle I’ll Pay For
+                </a>
+              </p>
+              <p class="video_author">
+                MrBeast
+              </p>
+              <p class="video_stats">
+                141M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+              <img class="thumbnail" src="thumbnails/thumbnail_7.webp">
+            </a>
+            <div class="running_time">
+              10:13
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                <img class="profile_pic"src="profiles/profile_7.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                  Why Planes Don't Fly Over Tibet
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                  RealLifeLore
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                  6.6M views &#183; 1 year ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=lFm4EM1juls">
+              <img class="thumbnail" src="thumbnails/thumbnail_8.webp">
+            </a>
+            <div class="running_time">
+              7:12
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=lFm4EM1juls">
+                <img class="profile_pic"src="profiles/profile_8.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=lFm4EM1juls">
+                  Inside The World's Biggest Passenger Plane
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=lFm4EM1juls">
+                  Tech Vision
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=lFm4EM1juls">
+                  3.7M views &#183; 10 months ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+              <img class="thumbnail" src="thumbnails/thumbnail_9.webp">
+            </a>
+            <div class="running_time">
+              13:17
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+                <img class="profile_pic"src="profiles/profile_9.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+                  The SECRET to Super Human STRENGTH
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+                  ThenX
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+                  20M views &#183; 3 year ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+              <img class="thumbnail" src="thumbnails/thumbnail_10.webp">
+            </a>
+            <div class="running_time">
+              7:52
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+                <img class="profile_pic"src="profiles/profile_10.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+                  How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+                  Business Insider
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+                  14M views &#183; 1 year ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=0nZuYyXET3s">
+              <img class="thumbnail" src="thumbnails/thumbnail_11.webp">
+            </a>
+            <div class="running_time">
+              4:10
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=0nZuYyXET3s">
+                <img class="profile_pic"src="profiles/profile_11.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=0nZuYyXET3s">
+                  Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=0nZuYyXET3s">
+                  Destination Tips
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=0nZuYyXET3s">
+                  3M views &#183; 1 year ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail_pic">
+            <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
+              <img class="thumbnail" src="thumbnails/thumbnail_12.webp">
+            </a>
+            <div class="running_time">
+              4:51
+            </div>
+          </div>
+          <div class="video_grid">
+            <div class="video_profile">
+              <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
+                <img class="profile_pic"src="profiles/profile_12.jpeg">
+              </a>
+            </div>
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
+                  What would happen if you didn’t drink water? &#8722; Mia Nacamulli
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
+                  TED-Ed
+                </a>
+              </p>
+              <p class="video_stats">
+                <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
+                  12M views &#183; 5 years ago
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
